@@ -1,0 +1,45 @@
+<div class="load-data">
+    <div class="block-content">
+        <div class="project-media row">
+            <div class="col-md-6">
+                <img src="images/p7.png" alt="" />
+            </div>
+            <div class="col-md-6">
+                <img src="images/p4.png" alt="" />
+
+            </div>
+        </div>
+        <div class="project-head">
+            <h1 class="block-title">Portfolio - Web responsive</h1>
+            <div class="tags"><span>Category : </span> UI / Web</div>
+            <div class="tags"><span>Client : </span> Own</div>
+            <div class="tags"><span>Completion : </span> Jan 2018</div>
+            <div class="tags"><span>Sector : </span> Graphic Design</div>
+        </div>
+        <p class="project-description">It is a design of a portfolio where the user is known as well as seeing all her projects at a glance. It collects the user's contact information, training, professional tools and methodologies with which she works. </p>
+        <div class="project-nav text-center">
+            <span class="float-left">
+                <a class="open-project" href="project-5.html">&leftarrow; Previous Project</a>
+            </span>
+            <span class="">
+                <a id="close-project" href="#"><i class="ion-grid"></i></a>
+            </span>
+            <span class="float-right">
+                <a class="open-project" href="project-7.html">Next Project &rightarrow; </a>
+            </span>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12 btn-email">
+            <a class="btn lowercase">mariapazosp@gmail.com</a>
+        </div>
+    </div>
+
+    <script>
+        $('#close-project').on('click', function() {
+            $('.content-blocks.pop').removeClass('showx');
+            $('.inline-menu-container').addClass('showx');
+            $('.content-blocks.pop section').empty();
+        });
+    </script>
+</div>
