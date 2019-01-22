@@ -17,22 +17,20 @@ if (empty($_POST["email"])) {
 }
 
 // MSG SUBJECT
-if (empty($_POST["msg_subject"])) {
-    $errorMSG .= "Subject is required ";
-} else {
-    $msg_subject = $_POST["msg_subject"];
-}
+// if (empty($_POST["msg_subject"])) {
+//     $errorMSG .= "Subject is required ";
+// } else {
+//     $msg_subject = $_POST["msg_subject"];
+// }
 
-
-// MESSAGE
+//MESSAGE
 if (empty($_POST["message"])) {
     $errorMSG .= "Message is required ";
 } else {
     $message = $_POST["message"];
 }
 
-
-$EmailTo = "mariapazospp@gmail.com";
+$EmailTo = "mariapazosp@gmail.com";
 $Subject = "New Message Received";
 
 // prepare email body text
@@ -42,9 +40,9 @@ $Body .= $name;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
-$Body .= "\n";
-$Body .= "Subject: ";
-$Body .= $msg_subject;
+// $Body .= "\n";
+// $Body .= "Subject: ";
+// $Body .= $msg_subject;
 $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
