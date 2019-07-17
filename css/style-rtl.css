@@ -722,7 +722,7 @@ h2.menu-item:after {
     line-height: 40px;
     margin-top: -5px;
     padding: 0 15px;
-    color: #666;
+    color:blue;
 }
 
 .inline-menu li.active,
